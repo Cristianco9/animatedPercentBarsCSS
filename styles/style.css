@@ -108,3 +108,15 @@ h2{
         width: 75%;
     }
 }
+
+/* Animation */
+#oxy-menu{
+    animation: oxy-bar 2s forwards;
+}
+
+/* Keyframes */
+@keyframes oxy-bar{
+    100%{
+        width: 80%;
+    }
+}
