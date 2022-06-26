@@ -1,10 +1,11 @@
-/* universal properties */
+/* Universal properties */
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* Setting REM measure */
 html{
     font-size: 62.5%;
 }
@@ -14,6 +15,7 @@ body{
     background-color: #D8D9D9;
 }
 
+/* Principal container */
 .main-box{
     width:40%;
     min-width:59rem;
@@ -23,6 +25,7 @@ body{
     top: 50%;
 }
 
+/* Container´s style */
 .container{
     width: 100%;
     padding: 3rem 3rem 5rem;
@@ -33,12 +36,14 @@ body{
     backdrop-filter: blur(1rem);
 }
 
+/* Setting font style for all child containers */
 .container *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-weight: 800;
 }
 
+/* Tittle */
 h2{
     margin-bottom: 5rem;
     letter-spacing: 0.2rem;
@@ -47,10 +52,12 @@ h2{
     font-weight: bold;
 }
 
+/* Spacing between elements */
 .sensors:not(:last-child){
     margin-bottom: 3rem;
 }
 
+/* Elements text */
 .details{
     width: 100%;
     display: flex;
@@ -59,12 +66,14 @@ h2{
     font-size: 1.5rem;
 }
 
+/* Bars containers */
 .menu{
     position: relative;
     border: 0.1rem solid #62C6F9;
     border-radius: 2rem;
 }
 
+/* Percent bars */
 .menu div{
     position: relative;
     width: 0;
@@ -73,48 +82,48 @@ h2{
     background-color: #62C6F9;
 }
 
-/* Animation */
+/* 1 bar animation */
 #battery-menu{
     animation: battery-bar 2s forwards;
 }
 
-/* keyframes */
+/* 1 bar keyframes */
 @keyframes battery-bar{
     100%{
         width: 87%;
     } 
 }
 
-/* Animation */
+/* 2 bar animation */
 #fuel-menu{
     animation: fuel-bar 2s forwards;
 }
 
-/* Keyframes */
+/* 2 bar keyframes */
 @keyframes fuel-bar{
     100%{
         width: 68%;
     }
 }
 
-/* Animation */
+/* 3 bar animation */
 #oil-menu{
     animation: oil-bar 2s forwards;
 }
 
-/* Keyframes */
+/* 3 bar keyframes */
 @keyframes oil-bar{
     100%{
         width: 75%;
     }
 }
 
-/* Animation */
+/* 4 bar animation */
 #oxy-menu{
     animation: oxy-bar 2s forwards;
 }
 
-/* Keyframes */
+/* 4 bar keyframes */
 @keyframes oxy-bar{
     100%{
         width: 80%;
