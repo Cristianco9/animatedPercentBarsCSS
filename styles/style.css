@@ -1,0 +1,109 @@
+/* universal properties */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    background-color: grey;
+}
+
+.main-box{
+    width:40%;
+    min-width:59rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
+
+.container{
+    width: 100%;
+    padding: 3rem 3rem 5rem;
+    background: linear-gradient(450deg, darkblue, black);
+    border: 0.2rem solid rgba(0, 0, 0, 0.06);
+    border-radius: 1rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1rem);
+}
+
+.container *{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+h2{
+    margin-bottom: 5rem;
+    letter-spacing: 0.2rem;
+    text-aling: center;
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+
+.sensors:not(:last-child){
+    margin-bottom: 3rem;
+}
+
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.menu{
+    position: relative;
+    border: 0.1rem solid yellow;
+    border-radius: 2rem;
+}
+
+.menu div{
+    position: relative;
+    width: 0;
+    height: 0.8rem;
+    border-radius: 1rem;
+    background-color: yellow;
+}
+
+/* Animation */
+#battery-menu{
+    animation: battery-bar 2s forwards;
+}
+
+/* keyframes */
+@keyframes battery-bar{
+    100%{
+        width: 87%;
+    } 
+}
+
+/* Animation */
+#fuel-menu{
+    animation: fuel-bar 2s forwards;
+}
+
+/* Keyframes */
+@keyframes fuel-bar{
+    100%{
+        width: 68%;
+    }
+}
+
+/* Animation */
+#oil-menu{
+    animation: oil-bar 2s forwards;
+}
+
+/* Keyframes */
+@keyframes oil-bar{
+    100%{
+        width: 75%;
+    }
+}
