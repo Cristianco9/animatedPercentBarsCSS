@@ -11,7 +11,7 @@ html{
 
 body{
     height: 100vh;
-    background-color: grey;
+    background-color: #D8D9D9;
 }
 
 .main-box{
@@ -26,7 +26,7 @@ body{
 .container{
     width: 100%;
     padding: 3rem 3rem 5rem;
-    background: linear-gradient(450deg, darkblue, black);
+    background: linear-gradient(450deg, #193CBC, #181819);
     border: 0.2rem solid rgba(0, 0, 0, 0.06);
     border-radius: 1rem;
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
@@ -36,13 +36,13 @@ body{
 .container *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    font-weight: 500;
+    font-weight: 800;
 }
 
 h2{
     margin-bottom: 5rem;
     letter-spacing: 0.2rem;
-    text-aling: center;
+    text-align: center;
     font-size: 3.4rem;
     font-weight: bold;
 }
@@ -56,11 +56,12 @@ h2{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
 }
 
 .menu{
     position: relative;
-    border: 0.1rem solid yellow;
+    border: 0.1rem solid #62C6F9;
     border-radius: 2rem;
 }
 
@@ -69,7 +70,7 @@ h2{
     width: 0;
     height: 0.8rem;
     border-radius: 1rem;
-    background-color: yellow;
+    background-color: #62C6F9;
 }
 
 /* Animation */
